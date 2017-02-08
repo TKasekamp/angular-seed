@@ -3,12 +3,13 @@
  */
 interface KCom {
   active: string,
-  rssi: number,
-
-  mcuReset: number,
-  trxReset: number,
-
-  batStatus: string,
-  dcdcStatus: string,
-  epsStatus: string
+  // rssi: number,
+  //
+  // mcuReset: number,
+  // trxReset: number,
+  //
+  // batStatus: string,
+  // dcdcStatus: string,
+  // epsStatus: string
 }
+export default KCom;

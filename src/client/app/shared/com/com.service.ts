@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
+import KCom from "./kcom";
 // import 'rxjs/add/operator/do';  // for debugging
 
 /**
@@ -20,8 +21,9 @@ export class ComService {
    * Returns an Observable for the HTTP GET request for the JSON resource.
    * @return {string[]} The Observable for the HTTP request.
    */
-  get(): Observable<string[]> {
-    return this.http.get('/assets/data.json')
+
+  getKCom(): Observable<KCom> {
+    return this.http.get('/assets/data/raw-kcom.json')
                     .map((res: Response) => res.json())
     //              .do(data => console.log('server data:', data))  // debug
                     .catch(this.handleError);
