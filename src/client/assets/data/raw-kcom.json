@@ -1,0 +1,9 @@
+{
+  "active": "OK",
+  "rssi": "-60",
+  "mcuReset": 2,
+  "trxReset": 1,
+  "batStatus": "OK",
+  "dcdcStatus": "OK",
+  "epsStatus": "OK"
+}
